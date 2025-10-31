@@ -10,7 +10,10 @@ body {
     justify-content: center;
     margin: 2%;
 }
-
+a {
+    text-decoration: none;
+    padding: 2%;
+}
 
 /*HEADER*/
 header {
@@ -44,7 +47,7 @@ main {
     height: fit-content;
     max-height: fit-content;
     gap: 20px;
-    grid-template-columns: 1fr 1fr;    
+    grid-template-columns: 1fr 1fr 1fr;    
     
 }
 .card_product img {
@@ -88,7 +91,7 @@ footer {
 .arrows {
     width: 30px;
     border-radius: 20%;
-    margin: 10%;
+    margin: 5%;
 }
 
 .imgProd {
@@ -96,6 +99,7 @@ footer {
     max-height: 100px;
     border-radius: 10%;
     margin: 20px;
+    margin-top: 30px;
 }
 
 .description {
