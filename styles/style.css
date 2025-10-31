@@ -31,8 +31,6 @@ header p {
     padding-bottom: 2%;
 }
 
-
-
 /*MAIN*/
 main {
     background-color: #aead88;
@@ -61,7 +59,6 @@ main {
 }
 
 
-
 /*FOOTER*/
 footer {
     background-color: #7e7f4a;
@@ -77,6 +74,33 @@ footer {
     display: grid;
     justify-content: center;
     gap: 5px;
+}
+
+
+/*ESTILOS IMAGENES*/
+
+.icons {
+    min-width: 20px;
+    max-width: 50px;
+    border-radius: 20%;
+}
+
+.arrows {
+    width: 30px;
+    border-radius: 20%;
+    margin: 10%;
+}
+
+.imgProd {
+    min-width: 50px;
+    max-height: 100px;
+    border-radius: 10%;
+    margin: 20px;
+}
+
+.description {
+    margin: 1%;
+    margin-bottom: 20px;
 }
 
 
