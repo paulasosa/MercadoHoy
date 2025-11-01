@@ -113,3 +113,61 @@ footer {
     text-align: center;
     padding-top: 2%;
 }
+
+/*BUTTON*/
+
+.js{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding-top: 2%;
+}
+#ordenarPrecio:hover {
+    background-color: #3a5f3c;
+}
+button {
+    background-color:#799973;
+    border: #F2FCEF 3px;
+    border-color: #141e12;
+    border-style:inherit;
+    padding: 1%;
+    margin-bottom: 4%;
+    text-decoration: #141e12;
+    cursor: pointer;
+}
+
+#buscarProducto {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #4d774e;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #3b5e3c;
+}
+
+.acciones {
+    margin: 2%;
+    
+}
+
+.acciones button {
+    background-color: #4d774e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.acciones button:hover {
+    background-color: #3a5f3c;
+}
+
+#listaCarrito {
+    padding-top: 2%;
+    text-align: center;
+}

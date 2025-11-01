@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mercadohoy</title>
   <link rel="stylesheet" href="../styles/style.css">
+  <script src="../js/script.js" defer></script>
 </head>
 <body>
   <header>
@@ -24,7 +25,17 @@
     <p>Proyecto como evidencia de producto realizado en el tecnologo en analisis y desarrollo de software</p>
   </header>
   <main>
-    <p>Este es el main</p>
+    <h2 class="title-page">Productos agregados</h2>
+    <ul id="listaCarrito">
+      <!-- Aquí el JS insertará los productos -->
+    </ul>
+
+    <div class="acciones">
+      <button id="btnVaciar">Vaciar carrito</button>
+      <a href="../index.html">
+        <button>  ← Volver a productos</button>
+      </a>
+    </div>
   </main>
   <footer>
     <p>Todos los derechos reservados</p>
