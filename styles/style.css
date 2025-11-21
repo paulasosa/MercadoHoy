@@ -122,18 +122,27 @@ footer {
     justify-items: center;
     padding-top: 2%;
 }
+#ordenarPrecio {
+    background-color:#799973;
+    border: #F2FCEF 5px;
+    border-color: #13330d7f;
+    border-style:double;
+    cursor: pointer;
+    border-radius: 4%;
+}
 #ordenarPrecio:hover {
     background-color: #3a5f3c;
 }
 button {
     background-color:#799973;
-    border: #F2FCEF 3px;
-    border-color: #141e12;
+    border: #F2FCEF 4px;
+    border-color: #13330d7f;
     border-style:inherit;
     padding: 1%;
     margin-bottom: 4%;
     text-decoration: #141e12;
     cursor: pointer;
+    border-radius: 4%;
 }
 
 #buscarProducto {
