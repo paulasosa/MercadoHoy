@@ -1,0 +1,16 @@
+{
+  "name": "cls",
+  "version": "1.0.0",
+  "description": "backend en node",
+  "license": "MIT",
+  "author": "paula sosa",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
