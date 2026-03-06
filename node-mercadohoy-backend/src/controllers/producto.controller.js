@@ -34,3 +34,33 @@ exports.deleteProducto = (req, res) => {
     res.json({ message: "Producto eliminado ✔" });
   });
 };
+
+const db = require("../config/db");
+
+// Obtener productos
+exports.obtenerProductos = (req, res) => {
+    db.query("SELECT * FROM productos", (err, results) => {
+        if (err) {
+            return res.status(500).json(err);
+        }
+        res.json(results);
+    });
+};
+
+// Crear producto
+exports.crearProducto = (req, res) => {
+    const { nombre, precio, descripcion, supermercado } = req.body;
+
+    const sql = "INSERT INTO productos (nombre, precio, descripcion, supermercado) VALUES (?, ?, ?, ?)";
+
+    db.query(sql, [nombre, precio, descripcion, supermercado], (err, result) => {
+        if (err) {
+            return res.status(500).json(err);
+        }
+
+        res.json({
+            mensaje: "Producto creado",
+            id: result.insertId
+        });
+    });
+};
