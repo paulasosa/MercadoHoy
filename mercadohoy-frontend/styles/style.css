@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-size: 20px;
-    color: #F2FCEF;
+    color: #efffea;
 }
 body {
     max-width: 98%;
@@ -17,7 +17,7 @@ a {
 
 /*HEADER*/
 header {
-    background-color: #799973;
+    background-color: #9cca93;
     text-align: center;
 }
 .nav {
@@ -36,7 +36,7 @@ header p {
 
 /*MAIN*/
 main {
-    background-color: #aead88;
+    background-color: #7a795d;
 }
 .card {
     display: grid;
@@ -124,7 +124,7 @@ footer {
 }
 #ordenarPrecio {
     background-color:#799973;
-    border: #F2FCEF 5px;
+    border: #f2fcef1f 5px;
     border-color: #13330d7f;
     border-style:double;
     cursor: pointer;
@@ -135,7 +135,7 @@ footer {
 }
 button {
     background-color:#799973;
-    border: #F2FCEF 4px;
+    border: #f2fcef07 4px;
     border-color: #13330d7f;
     border-style:inherit;
     padding: 1%;
@@ -163,7 +163,7 @@ button:hover {
 
 .acciones button {
     background-color: #4d774e;
-    color: white;
+    color: rgb(250, 234, 234);
     border: none;
     border-radius: 10px;
     padding: 10px 20px;
@@ -179,4 +179,8 @@ button:hover {
 #listaCarrito {
     padding-top: 2%;
     text-align: center;
+}
+
+h1, h2, p {
+    color:#0d5000f8;
 }
