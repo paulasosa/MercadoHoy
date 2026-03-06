@@ -5,9 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mercadohoy</title>
   <link rel="stylesheet" href="./styles/style.css">
-  <script src="./js/script.js" defer></script>
+  <!--<script src="./js/script.js" defer></script>-->
 </head>
 <body>
+
+  <h1>Productos</h1>
+
+  <button onclick="cargarProductos()">Ver productos</button>
+
+  <ul id="listaProductos"></ul>
+
+  <script src="js/app.js"></script>
+
+  <h2>Agregar producto</h2>
+
+  <input type="text" id="nombre" placeholder="Nombre">
+  <input type="number" id="precio" placeholder="Precio">
+
+  <button onclick="crearProducto()">Guardar</button>
+
+    <!--
   <header>
     <section class="nav">
       <div>
@@ -42,7 +59,7 @@
         </div>
         <p class="description">Aguacate</p>
         <p class="description">$ 7.000</p>
-        <!--<p class="description">Descripción producto</p>-->
+        <!--<p class="description">Descripción producto</p>
         <button id="" class="btnCarrito">Agregar al carrito</button>
       </article>
 
@@ -54,7 +71,7 @@
         </div>
         <p class="description">Apio</p>
         <p class="description">$ 4.000</p>
-        <!--<p class="description">Descripción producto</p>-->
+        <!--<p class="description">Descripción producto</p>
         <button class="btnCarrito">Agregar al carrito</button>
       </article>
 
@@ -66,7 +83,7 @@
         </div>
         <p class="description">Banano</p>
         <p class="description">$ 2.000</p>
-        <!--<p class="description">Descripción producto</p>-->
+        <!--<p class="description">Descripción producto</p>
         <button class="btnCarrito">Agregar al carrito</button>
       </article>
 
@@ -78,7 +95,7 @@
         </div>
         <p class="description">Brocoli</p>
         <p class="description">$ 6.000</p>
-        <!--<p class="description">Descripción producto</p>-->
+        <!--<p class="description">Descripción producto</p>
         <button class="btnCarrito">Agregar al carrito</button>
       </article>
       
@@ -90,7 +107,7 @@
         </div>
         <p class="description">Cebolla</p>
         <p class="description">$ 2.500</p>
-        <!--<p class="description">Descripción producto</p>-->
+        <!--<p class="description">Descripción producto</p>
         <button class="btnCarrito">Agregar al carrito</button>
       </article>
 
@@ -102,7 +119,7 @@
         </div>
         <p class="description">Cilantro</p>
         <p class="description">$1.000</p>
-        <!--<p class="description">Descripción producto</p>-->
+        <!--<p class="description">Descripción producto</p>--
         <button class="btnCarrito">Agregar al carrito</button>
       </article>
 
@@ -114,7 +131,7 @@
         </div>
         <p class="description">Coliflor</p>
         <p class="description">$ 4.500</p>
-        <!--<p class="description">Descripción producto</p>-->
+        <!--<p class="description">Descripción producto</p>--
         <button class="btnCarrito">Agregar al carrito</button>
       </article>
 
@@ -126,7 +143,7 @@
         </div>
         <p class="description">Espinaca</p>
         <p class="description">$ 3.800</p>
-        <!--<p class="description">Descripción producto</p>-->
+        <!--<p class="description">Descripción producto</p>--
         <button class="btnCarrito">Agregar al carrito</button>
       </article>
       
@@ -138,7 +155,7 @@
         </div>
         <p class="description">Guanabana</p>
         <p class="description">$ 8.500</p>
-        <!--<p class="description">Descripción producto</p>-->
+        <!--<p class="description">Descripción producto</p>--
         <button class="btnCarrito">Agregar al carrito</button>
       </article>
 
@@ -150,7 +167,7 @@
         </div>
         <p class="description">Habichuela</p>
         <p class="description">$ 3.500</p>
-        <!--<p class="description">Descripción producto</p>-->
+        <!--<p class="description">Descripción producto</p>--
         <button class="btnCarrito">Agregar al carrito</button>
       </article>
 
@@ -162,7 +179,7 @@
         </div>
         <p class="description">Limón</p>
         <p class="description">$ 2.900</p>
-        <!--<p class="description">Descripción producto</p>-->
+        <!--<p class="description">Descripción producto</p>--
         <button class="btnCarrito">Agregar al carrito</button>
       </article>
 
@@ -174,7 +191,7 @@
         </div>
         <p class="description">Mango</p>
         <p class="description">$ 3.200</p>
-        <!--<p class="description">Descripción producto</p>-->
+        <!--<p class="description">Descripción producto</p>--
         <button class="btnCarrito">Agregar al carrito</button>
       </article>
 
@@ -186,7 +203,7 @@
         </div>
         <p class="description">Papa criolla</p>
         <p class="description">$ 4.200</p>
-        <!--<p class="description">Descripción producto</p>-->
+        <!--<p class="description">Descripción producto</p>--
         <button class="btnCarrito">Agregar al carrito</button>
       </article>
       
@@ -198,7 +215,7 @@
         </div>
         <p class="description">Papa pastusa</p>
         <p class="description">$ 1.800</p>
-        <!--<p class="description">Descripción producto</p>-->
+        <!--<p class="description">Descripción producto</p>--
         <button class="btnCarrito">Agregar al carrito</button>
       </article>
 
@@ -210,7 +227,7 @@
         </div>
         <p class="description">Pimentón</p>
         <p class="description">$ 2.800</p>
-        <!--<p class="description">Descripción producto</p>-->
+        <!--<p class="description">Descripción producto</p>--
         <button class="btnCarrito">Agregar al carrito</button>
       </article>
 
@@ -222,7 +239,7 @@
         </div>
         <p class="description">Piña</p>
         <p class="description">$ 2.300</p>
-        <!--<p class="description">Descripción producto</p>-->
+        <!--<p class="description">Descripción producto</p>--
         <button class="btnCarrito">Agregar al carrito</button>
       </article>
       
@@ -234,7 +251,7 @@
         </div>
         <p class="description">Plátano</p>
         <p class="description">$ 4.300</p>
-        <!--<p class="description">Descripción producto</p>-->
+        <!--<p class="description">Descripción producto</p>--
         <button class="btnCarrito">Agregar al carrito</button>
       </article>
 
@@ -246,7 +263,7 @@
         </div>
         <p class="description">Tomate chonto</p>
         <p class="description">$ 3.000</p>
-        <!--<p class="description">Descripción producto</p>-->
+        <!--<p class="description">Descripción producto</p>--
         <button class="btnCarrito">Agregar al carrito</button>
       </article>
 
@@ -258,7 +275,7 @@
         </div>
         <p class="description">Zanahoria</p>
         <p class="description">$ 2.000</p>
-        <!--<p class="description">Descripción producto</p>-->
+        <!--<p class="description">Descripción producto</p>--
         <button class="btnCarrito">Agregar al carrito</button>
       </article>
 
@@ -270,10 +287,10 @@
         </div>
         <p class="description">Zapallo</p>
         <p class="description">$ 5.000</p>
-        <!--<p class="description>Descripción producto</p>-->
+        <!--<p class="description>Descripción producto</p>--
         <button class="btnCarrito">Agregar al carrito</button>
       </article>
-  <!--
+  
     ESTRUCTURA CARD PRODUCTOS
     
       <article class="card_product">
@@ -287,12 +304,14 @@
         <p class="description">Descripción producto</p>
         <button class="btnCarrito">Agregar al carrito</button>
       </article>
-  -->
+  
     </section>
   </main>
   <footer>
     <p>Todos los derechos reservados</p>
     <p>Diseñado y programado por Paula A. Sosa Hdez. 2025</p>
   </footer>
+  -->
+
 </body>
 </html>
