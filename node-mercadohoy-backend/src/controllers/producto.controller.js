@@ -14,29 +14,7 @@ exports.getProductoById = (req, res) => {
   });
 };
 
-exports.createProducto = (req, res) => {
-  Producto.create(req.body, (err, result) => {
-    if (err) return res.status(500).json(err);
-    res.json({ message: "Producto creado ✔", id: result.insertId });
-  });
-};
-
-exports.updateProducto = (req, res) => {
-  Producto.update(req.params.id, req.body, (err) => {
-    if (err) return res.status(500).json(err);
-    res.json({ message: "Producto actualizado ✔" });
-  });
-};
-
-exports.deleteProducto = (req, res) => {
-  Producto.delete(req.params.id, (err) => {
-    if (err) return res.status(500).json(err);
-    res.json({ message: "Producto eliminado ✔" });
-  });
-};
-
-const db = require("../config/db");
-
+/*
 // Obtener productos
 exports.obtenerProductos = (req, res) => {
     db.query("SELECT * FROM productos", (err, results) => {
@@ -46,6 +24,16 @@ exports.obtenerProductos = (req, res) => {
         res.json(results);
     });
 };
+*/
+
+exports.createProducto = (req, res) => {
+  Producto.create(req.body, (err, result) => {
+    if (err) return res.status(500).json(err);
+    res.json({ message: "Producto creado ✔", id: result.insertId });
+  });
+};
+
+/*
 
 // Crear producto
 exports.crearProducto = (req, res) => {
@@ -64,3 +52,23 @@ exports.crearProducto = (req, res) => {
         });
     });
 };
+
+*/
+
+exports.updateProducto = (req, res) => {
+  Producto.update(req.params.id, req.body, (err) => {
+    if (err) return res.status(500).json(err);
+    res.json({ message: "Producto actualizado ✔" });
+  });
+};
+
+exports.deleteProducto = (req, res) => {
+  Producto.delete(req.params.id, (err) => {
+    if (err) return res.status(500).json(err);
+    res.json({ message: "Producto eliminado ✔" });
+  });
+};
+
+const db = require("../config/db");
+
+
