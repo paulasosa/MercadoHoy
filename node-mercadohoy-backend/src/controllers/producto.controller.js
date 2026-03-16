@@ -14,46 +14,12 @@ exports.getProductoById = (req, res) => {
   });
 };
 
-/*
-// Obtener productos
-exports.obtenerProductos = (req, res) => {
-    db.query("SELECT * FROM productos", (err, results) => {
-        if (err) {
-            return res.status(500).json(err);
-        }
-        res.json(results);
-    });
-};
-*/
-
 exports.createProducto = (req, res) => {
   Producto.create(req.body, (err, result) => {
     if (err) return res.status(500).json(err);
     res.json({ message: "Producto creado ✔", id: result.insertId });
   });
 };
-
-/*
-
-// Crear producto
-exports.crearProducto = (req, res) => {
-    const { nombre, precio, descripcion, supermercado } = req.body;
-
-    const sql = "INSERT INTO productos (nombre, precio, descripcion, supermercado) VALUES (?, ?, ?, ?)";
-
-    db.query(sql, [nombre, precio, descripcion, supermercado], (err, result) => {
-        if (err) {
-            return res.status(500).json(err);
-        }
-
-        res.json({
-            mensaje: "Producto creado",
-            id: result.insertId
-        });
-    });
-};
-
-*/
 
 exports.updateProducto = (req, res) => {
   Producto.update(req.params.id, req.body, (err) => {
